@@ -1,0 +1,14 @@
+.content{
+	width:800px;
+	border: 1px solid pink;
+	height: 400px;
+	position: relative;
+}
+.action{
+	margin: 20px auto;
+	text-align: center;
+}
+.danmu{
+	position: absolute;
+	font-size : 20px;
+}

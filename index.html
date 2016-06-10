@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>DanmuDemo</title>
+</head>
+<body>
+<div id="example">
+  <div class="container-fluid content">
+  	<danmu v-for="(index,item) in list" track-by="$index" :top="index%7*50+'px'" :msg="item.msg" :index="index"></danmu>
+  </div>
+  <form class="form-inline action">
+	  <div class="form-group">
+	    <input type="text" v-model="newDanmu" class="form-control"  placeholder="请输入">
+	  </div>
+	  
+	  <button type="button" class="btn btn-info" v-on:click="sendNew">发送</button>
+	  <button type="button" class="btn btn-danger" v-on:click="clear">清除</button>
+	</form>
+</div>
+</body>
+<script type="text/javascript" src="./bundle.js"></script>
+</html>
